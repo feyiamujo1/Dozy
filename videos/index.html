@@ -14,6 +14,12 @@
 		href="https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" crossorigin />
 	<link rel="preload" data-rocket-preload as="font"
 		href="https://fonts.gstatic.com/s/spacegrotesk/v21/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2" crossorigin />
+		<script
+		src="https://robertsmith.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1"
+		id="smartmenus-js" data-rocket-defer defer></script>
+	<script
+		src="https://robertsmith.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.0"
+		id="e-sticky-js" data-rocket-defer defer></script>
 	<style id="wpr-usedcss">
 		img:is([sizes=auto i], [sizes^="auto," i]) {
 			contain-intrinsic-size: 3000px 1500px
@@ -8072,14 +8078,14 @@
 	<style id='dominant-color-styles-inline-css'></style>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
-	<script data-minify="1"
-		src="../wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/assets/js/ecs_ajax_pagination.js%3Fver=1742406094"
-		id="ecs_ajax_load-js" data-rocket-defer defer></script>
-	<script data-minify="1"
-		src="../wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/assets/js/ecs.js%3Fver=1742406094"
-		id="ecs-script-js" data-rocket-defer defer></script>
 	<link rel="https://api.w.org/" href="../wp-json/index.html" />
 	<meta name="generator" content="dominant-color-images 1.2.0">
+	<script src="https://robertsmith.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.0"
+		id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+	<script src="https://robertsmith.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
+		id="wp-hooks-js"></script>
+	<script src="https://robertsmith.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+		id="wp-i18n-js"></script>
 
 	<meta name="generator" content="performance-lab 3.9.0; plugins: dominant-color-images">
 	<meta name="generator"
@@ -9611,567 +9617,166 @@
 	</div>
 
 	<script type="rocketlazyloadscript">
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-
-	<script data-minify="1"
-		src="../wp-content/cache/min/1/wp-content/plugins/popup-anything-on-click/assets/js/popupaoc-public.js%3Fver=1742406094"
-		id="popupaoc-public-js-js" data-rocket-defer defer></script>
-	<script src="../wp-includes/js/dist/dom-ready.min.js%3Fver=f77871ff7694fffea381" id="wp-dom-ready-js"
-		data-rocket-defer defer></script>
-	<script id="starter-templates-zip-preview-js-extra">
-		var starter_templates_zip_preview = { "AstColorPaletteVarPrefix": "--ast-global-", "AstEleColorPaletteVarPrefix": "--ast-global-" };
+		const lazyloadRunObserver = () => {
+			const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+			const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+				entries.forEach( ( entry ) => {
+					if ( entry.isIntersecting ) {
+						let lazyloadBackground = entry.target;
+						if( lazyloadBackground ) {
+							lazyloadBackground.classList.add( 'e-lazyloaded' );
+						}
+						lazyloadBackgroundObserver.unobserve( entry.target );
+					}
+				});
+			}, { rootMargin: '200px 0px 200px 0px' } );
+			lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+				lazyloadBackgroundObserver.observe( lazyloadBackground );
+			} );
+		};
+		const events = [
+			'DOMContentLoaded',
+			'elementor/lazyload/observe',
+		];
+		events.forEach( ( event ) => {
+			document.addEventListener( event, lazyloadRunObserver );
+		} );
 	</script>
-	<script data-minify="1"
-		src="../wp-content/cache/min/1/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js%3Fver=1742406094"
-		id="starter-templates-zip-preview-js" data-rocket-defer defer></script>
-	<script
-		src="../wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/spectra-block-positioning.min.js%3Fver=2.19.4"
-		id="uagb-block-positioning-js-js" data-rocket-defer defer></script>
-	<script id="rocket-browser-checker-js-after">
-		"use strict"; var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor) } } return function (Constructor, protoProps, staticProps) { return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor } }(); function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function") } var RocketBrowserCompatibilityChecker = function () { function RocketBrowserCompatibilityChecker(options) { _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options } return _createClass(RocketBrowserCompatibilityChecker, [{ key: "_checkPassiveOption", value: function (self) { try { var options = { get passive() { return !(self.passiveSupported = !0) } }; window.addEventListener("test", null, options), window.removeEventListener("test", null, options) } catch (err) { self.passiveSupported = !1 } } }, { key: "initRequestIdleCallback", value: function () { !1 in window && (window.requestIdleCallback = function (cb) { var start = Date.now(); return setTimeout(function () { cb({ didTimeout: !1, timeRemaining: function () { return Math.max(0, 50 - (Date.now() - start)) } }) }, 1) }), !1 in window && (window.cancelIdleCallback = function (id) { return clearTimeout(id) }) } }, { key: "isDataSaverModeOn", value: function () { return "connection" in navigator && !0 === navigator.connection.saveData } }, { key: "supportsLinkPrefetch", value: function () { var elem = document.createElement("link"); return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype } }, { key: "isSlowConnection", value: function () { return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType) } }]), RocketBrowserCompatibilityChecker }();
-	</script>
-	<script id="rocket-preload-links-js-extra">
-		var RocketPreloadLinksConfig = { "excludeUris": "\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/robertsmith.com", "onHoverDelay": "100", "rateThrottle": "3" };
-	</script>
-	<script id="rocket-preload-links-js-after">
-		(function () {
-			"use strict"; var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e = function () { function i(e, t) { for (var n = 0; n < t.length; n++) { var i = t[n]; i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i) } } return function (e, t, n) { return t && i(e.prototype, t), n && i(e, n), e } }(); function i(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } var t = function () { function n(e, t) { i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0 } return e(n, [{ key: "init", value: function () { !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = { excludeUris: RegExp(this.config.excludeUris, "i"), images: RegExp(".(" + this.config.imageExt + ")$", "i"), fileExt: RegExp(".(" + this.config.fileExt + ")$", "i") }, this._initListeners(this)) } }, { key: "_initListeners", value: function (e) { -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions) } }, { key: "listener", value: function (e) { var t = e.target.closest("a"), n = this._prepareUrl(t); if (null !== n) switch (e.type) { case "mousedown": case "touchstart": this._addPrefetchLink(n); break; case "mouseover": this._earlyPrefetch(t, n, "mouseout") } } }, { key: "_earlyPrefetch", value: function (t, e, n) { var i = this, r = setTimeout(function () { if (r = null, 0 === i.numOnHover) setTimeout(function () { return i.numOnHover = 0 }, 1e3); else if (i.numOnHover > i.config.rateThrottle) return; i.numOnHover++, i._addPrefetchLink(e) }, this.config.onHoverDelay); t.addEventListener(n, function e() { t.removeEventListener(n, e, { passive: !0 }), null !== r && (clearTimeout(r), r = null) }, { passive: !0 }) } }, { key: "_addPrefetchLink", value: function (i) { return this.prefetched.add(i.href), new Promise(function (e, t) { var n = document.createElement("link"); n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n) }).catch(function () { }) } }, { key: "_prepareUrl", value: function (e) { if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null; var t = e.href.substring(0, this.config.siteUrl.length), n = this._getPathname(e.href, t), i = { original: e.href, protocol: e.protocol, origin: t, pathname: n, href: t + n }; return this._isLinkOk(i) ? i : null } }, { key: "_getPathname", value: function (e, t) { var n = t ? e.substring(this.config.siteUrl.length) : e; return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n } }, { key: "_shouldAddTrailingSlash", value: function (e) { return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e) } }, { key: "_isLinkOk", value: function (e) { return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href)) } }], [{ key: "run", value: function () { "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({ capture: !0, passive: !0 }), RocketPreloadLinksConfig).init() } }]), n }(); t.run();
-		}());
-	</script>
-	<script src="../wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js%3Fver=1.2.1"
-		id="smartmenus-js" data-rocket-defer defer></script>
-	<script src="../wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js%3Fver=3.28.0"
-		id="e-sticky-js" data-rocket-defer defer></script>
-	<script src="../wp-includes/js/imagesloaded.min.js%3Fver=5.0.0" id="imagesloaded-js" data-rocket-defer
-		defer></script>
-	<script data-minify="1"
-		src="../wp-content/cache/min/1/wp-content/plugins/page-links-to/dist/new-tab.js%3Fver=1742406094"
-		id="page-links-to-js" data-rocket-defer defer></script>
-	<script id="ivory-search-scripts-js-extra">
-		var IvorySearchVars = { "is_analytics_enabled": "1" };
-	</script>
-	<script src="../wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js%3Fver=5.5.9"
-		id="ivory-search-scripts-js" data-rocket-defer defer></script>
-	<script src="../wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js%3Fver=3.28.0"
-		id="elementor-pro-webpack-runtime-js" data-rocket-defer defer></script>
-	<script src="../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js%3Fver=3.28.0"
-		id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
-	<script src="../wp-content/plugins/elementor/assets/js/frontend-modules.min.js%3Fver=3.28.0"
-		id="elementor-frontend-modules-js" data-rocket-defer defer></script>
-	<script src="../wp-includes/js/dist/hooks.min.js%3Fver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-	<script src="../wp-includes/js/dist/i18n.min.js%3Fver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
-	<script id="wp-i18n-js-after">
-		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
-	</script>
-	<script id="elementor-pro-frontend-js-before">
-		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/robertsmith.com\/wp-admin\/admin-ajax.php", "nonce": "ed7bffbda7", "urls": { "assets": "https:\/\/robertsmith.com\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/robertsmith.com\/wp-json\/" }, "settings": { "lazy_load_background_images": true }, "popup": { "hasPopUps": true }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "x-twitter": { "title": "X" }, "threads": { "title": "Threads" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/robertsmith.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
-	</script>
-	<script src="../wp-content/plugins/elementor-pro/assets/js/frontend.min.js%3Fver=3.28.0"
-		id="elementor-pro-frontend-js" data-rocket-defer defer></script>
-	<script src="../wp-includes/js/jquery/ui/core.min.js%3Fver=1.13.3" id="jquery-ui-core-js" data-rocket-defer
-		defer></script>
-	<script id="elementor-frontend-js-before">
-		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.28.0", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "e_local_google_fonts": true, "theme_builder_v2": true, "nested-elements": true, "editor_v2": true, "e_element_cache": true, "home_screen": true }, "urls": { "assets": "https:\/\/robertsmith.com\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/robertsmith.com\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/robertsmith.com\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "9b2618c019" }, "swiperClass": "swiper", "settings": { "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 0, "title": "Videos Archive | Dozy Mmobuosi", "excerpt": "" } };
-	</script>
-	<script src="../wp-content/plugins/elementor/assets/js/frontend.min.js%3Fver=3.28.0" id="elementor-frontend-js"
-		data-rocket-defer defer></script>
-	<script src="../wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js%3Fver=3.28.0"
-		id="pro-elements-handlers-js" data-rocket-defer defer></script>
-	<script data-minify="1" src="../wp-content/cache/min/1/.js%3Fver=1742406094" type="text/javascript" charset="utf-8"
-		async="async"></script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29728">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
+<script data-minify="1"
+src="https://robertsmith.com/wp-content/cache/min/1/wp-content/plugins/popup-anything-on-click/assets/js/popupaoc-public.js?ver=1742406094"
+id="popupaoc-public-js-js" data-rocket-defer defer></script>
+<script src="https://robertsmith.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381"
+id="wp-dom-ready-js" data-rocket-defer defer></script>
+<script id="starter-templates-zip-preview-js-extra">
+var starter_templates_zip_preview = { "AstColorPaletteVarPrefix": "--ast-global-", "AstEleColorPaletteVarPrefix": "--ast-global-" };
+</script>
+<script data-minify="1"
+src="https://robertsmith.com/wp-content/cache/min/1/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=1742406094"
+id="starter-templates-zip-preview-js" data-rocket-defer defer></script>
+<script id="rocket-browser-checker-js-after">
+"use strict"; var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor) } } return function (Constructor, protoProps, staticProps) { return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor } }(); function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function") } var RocketBrowserCompatibilityChecker = function () { function RocketBrowserCompatibilityChecker(options) { _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options } return _createClass(RocketBrowserCompatibilityChecker, [{ key: "_checkPassiveOption", value: function (self) { try { var options = { get passive() { return !(self.passiveSupported = !0) } }; window.addEventListener("test", null, options), window.removeEventListener("test", null, options) } catch (err) { self.passiveSupported = !1 } } }, { key: "initRequestIdleCallback", value: function () { !1 in window && (window.requestIdleCallback = function (cb) { var start = Date.now(); return setTimeout(function () { cb({ didTimeout: !1, timeRemaining: function () { return Math.max(0, 50 - (Date.now() - start)) } }) }, 1) }), !1 in window && (window.cancelIdleCallback = function (id) { return clearTimeout(id) }) } }, { key: "isDataSaverModeOn", value: function () { return "connection" in navigator && !0 === navigator.connection.saveData } }, { key: "supportsLinkPrefetch", value: function () { var elem = document.createElement("link"); return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype } }, { key: "isSlowConnection", value: function () { return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType) } }]), RocketBrowserCompatibilityChecker }();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = { "excludeUris": "\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/robertsmith.com", "onHoverDelay": "100", "rateThrottle": "3" };
+</script>
+<script id="rocket-preload-links-js-after">
+(function () {
+	"use strict"; var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e = function () { function i(e, t) { for (var n = 0; n < t.length; n++) { var i = t[n]; i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i) } } return function (e, t, n) { return t && i(e.prototype, t), n && i(e, n), e } }(); function i(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } var t = function () { function n(e, t) { i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0 } return e(n, [{ key: "init", value: function () { !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = { excludeUris: RegExp(this.config.excludeUris, "i"), images: RegExp(".(" + this.config.imageExt + ")$", "i"), fileExt: RegExp(".(" + this.config.fileExt + ")$", "i") }, this._initListeners(this)) } }, { key: "_initListeners", value: function (e) { -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions) } }, { key: "listener", value: function (e) { var t = e.target.closest("a"), n = this._prepareUrl(t); if (null !== n) switch (e.type) { case "mousedown": case "touchstart": this._addPrefetchLink(n); break; case "mouseover": this._earlyPrefetch(t, n, "mouseout") } } }, { key: "_earlyPrefetch", value: function (t, e, n) { var i = this, r = setTimeout(function () { if (r = null, 0 === i.numOnHover) setTimeout(function () { return i.numOnHover = 0 }, 1e3); else if (i.numOnHover > i.config.rateThrottle) return; i.numOnHover++, i._addPrefetchLink(e) }, this.config.onHoverDelay); t.addEventListener(n, function e() { t.removeEventListener(n, e, { passive: !0 }), null !== r && (clearTimeout(r), r = null) }, { passive: !0 }) } }, { key: "_addPrefetchLink", value: function (i) { return this.prefetched.add(i.href), new Promise(function (e, t) { var n = document.createElement("link"); n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n) }).catch(function () { }) } }, { key: "_prepareUrl", value: function (e) { if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null; var t = e.href.substring(0, this.config.siteUrl.length), n = this._getPathname(e.href, t), i = { original: e.href, protocol: e.protocol, origin: t, pathname: n, href: t + n }; return this._isLinkOk(i) ? i : null } }, { key: "_getPathname", value: function (e, t) { var n = t ? e.substring(this.config.siteUrl.length) : e; return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n } }, { key: "_shouldAddTrailingSlash", value: function (e) { return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e) } }, { key: "_isLinkOk", value: function (e) { return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href)) } }], [{ key: "run", value: function () { "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({ capture: !0, passive: !0 }), RocketPreloadLinksConfig).init() } }]), n }(); t.run();
+}());
+</script>
+<script
+src="https://robertsmith.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1"
+id="smartmenus-js" data-rocket-defer defer></script>
+<script
+src="https://robertsmith.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.0"
+id="e-sticky-js" data-rocket-defer defer></script>
+<script data-minify="1"
+src="https://robertsmith.com/wp-content/cache/min/1/wp-content/plugins/page-links-to/dist/new-tab.js?ver=1742406094"
+id="page-links-to-js" data-rocket-defer defer></script>
+<script id="ivory-search-scripts-js-extra">
+var IvorySearchVars = { "is_analytics_enabled": "1" };
+</script>
+<script src="https://robertsmith.com/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=5.5.9"
+id="ivory-search-scripts-js" data-rocket-defer defer></script>
+<script
+src="https://robertsmith.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.0"
+id="elementor-pro-webpack-runtime-js" data-rocket-defer defer></script>
+<script src="https://robertsmith.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.0"
+id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
+<script src="https://robertsmith.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.0"
+id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+<script src="https://robertsmith.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
+id="wp-hooks-js"></script>
+<script src="https://robertsmith.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/robertsmith.com\/wp-admin\/admin-ajax.php", "nonce": "ed7bffbda7", "urls": { "assets": "https:\/\/robertsmith.com\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/robertsmith.com\/wp-json\/" }, "settings": { "lazy_load_background_images": true }, "popup": { "hasPopUps": true }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "x-twitter": { "title": "X" }, "threads": { "title": "Threads" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/robertsmith.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
+</script>
+<script src="https://robertsmith.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.0"
+id="elementor-pro-frontend-js" data-rocket-defer defer></script>
+<script src="https://robertsmith.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"
+data-rocket-defer defer></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.28.0", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "e_local_google_fonts": true, "theme_builder_v2": true, "nested-elements": true, "editor_v2": true, "e_element_cache": true, "home_screen": true }, "urls": { "assets": "https:\/\/robertsmith.com\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/robertsmith.com\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/robertsmith.com\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "9b2618c019" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 27274, "title": "Vista%20Equity%20Partners%20%7C%20Robert%20F.%20Smith", "excerpt": "", "featuredImage": "https:\/\/robertsmith.com\/wp-content\/uploads\/2024\/05\/Robert-f-smith-featured-image-min.jpg" } };
+</script>
+<script src="https://robertsmith.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.0"
+id="elementor-frontend-js" data-rocket-defer defer></script>
+<script src="https://robertsmith.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.0"
+id="pro-elements-handlers-js" data-rocket-defer defer></script>
+<!-- <script data-minify="1" src="https://robertsmith.com/wp-content/cache/min/1/.js?ver=1742406094"
+type="text/javascript" charset="utf-8" async="async"></script> -->
+<script type="text/javascript" id="uagb-script-frontend-27274">document.addEventListener("DOMContentLoaded", function () {
+	var ssLinksParent = document.querySelector('#uagb-social-share-');
+	ssLinksParent?.addEventListener('keyup', function (e) {
+		var link = e.target.closest('.uagb-ss__link');
+		if (link && e.keyCode === 13) {
+			handleSocialLinkClick(link);
+		}
+	});
 
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
+	ssLinksParent?.addEventListener('click', function (e) {
+		var link = e.target.closest('.uagb-ss__link');
+		if (link) {
+			handleSocialLinkClick(link);
+		}
+	});
 
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
+	function handleSocialLinkClick(link) {
+		var social_url = link.dataset.href;
+		var target = "";
+		if (social_url == "mailto:?body=") {
+			target = "_self";
+		}
+		var request_url = "";
+		if (social_url.indexOf("/pin/create/link/?url=") !== -1) {
+			request_url = social_url + encodeURIComponent(window.location.href) + "&media=" + 'https://robertsmith.com/wp-content/uploads/2024/05/Robert-f-smith-featured-image-min.jpg';
+		} else {
+			request_url = social_url + encodeURIComponent(window.location.href);
+		}
+		window.open(request_url, target);
+	}
+	window.addEventListener('DOMContentLoaded', () => {
+		const blockScope = document.querySelector('.uagb-block-ce0c905b');
+		if (!blockScope) {
+			return;
+		}
 
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
+		const anchorElement = blockScope.querySelector('a');
+		if (!anchorElement) {
+			return;
+		}
 
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29712">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
 
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
+		blockScope.addEventListener('keydown', (event) => {
+			if (13 === event.keyCode || 32 === event.keyCode) {
+				event.preventDefault();
 
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29670">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
-
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
-
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29625">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
-
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
-
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29612">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
-
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
-
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29584">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
-
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
-
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29476">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
-
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
-
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29475">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
-
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
-
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="uagb-script-frontend-29474">document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '#uagb-social-share-' );
-ssLinksParent?.addEventListener( 'keyup', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link && e.keyCode === 13 ) {
-	handleSocialLinkClick( link );
-}
-});
-
-ssLinksParent?.addEventListener( 'click', function ( e ) {
-var link = e.target.closest( '.uagb-ss__link' );
-if ( link ) {
-	handleSocialLinkClick( link );
-}
-});
-
-function handleSocialLinkClick( link ) {
-var social_url = link.dataset.href;
-var target = "";
-if ( social_url == "mailto:?body=" ) {
-	target = "_self";
-}
-var request_url = "";
-if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
-	request_url = social_url + encodeURIComponent( window.location.href ) + "&media=" + '';
-} else {
-	request_url = social_url + encodeURIComponent( window.location.href );
-}
-window.open( request_url, target );
-}
-				window.addEventListener( 'DOMContentLoaded', () => {
-					const blockScope = document.querySelector( '.uagb-block-ce0c905b' );
-					if ( ! blockScope ) {
-						return;
-					}
-
-					const anchorElement = blockScope.querySelector('a');
-					if (!anchorElement) {
-						return;
-					} 
-
-					 
-					blockScope.addEventListener('keydown', (event) => {
-						if ( 13 === event.keyCode || 32 === event.keyCode ) {
-							event.preventDefault();
-							 
-							anchorElement.click();	
-						}
-					} );
-				} );
-			 });</script>
-	<script>window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }]; window.addEventListener('LazyLoad::Initialized', function (e) {
-			var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
-				var observer = new MutationObserver(function (mutations) {
-					var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
-						for (var i = 0; i < mutation.addedNodes.length; i++) {
-							if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
-							if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
-							images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
-							if (is_iframe) { iframe_count += 1 }
-						}
-					}); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
-				}); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+				anchorElement.click();
 			}
-		}, !1)</script>
-	<script data-no-minify="1" async
-		src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
-	<script>(() => { class RocketElementorPreload { constructor() { this.deviceMode = document.createElement("span"), this.deviceMode.id = "elementor-device-mode-wpr", this.deviceMode.setAttribute("class", "elementor-screen-only"), document.body.appendChild(this.deviceMode) } t() { let t = getComputedStyle(this.deviceMode, ":after").content.replace(/"/g, ""); this.animationSettingKeys = this.i(t), document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t => { const e = t.getBoundingClientRect(); if (e.bottom >= 0 && e.top <= window.innerHeight) try { this.o(t) } catch (t) { } })) } o(t) { const e = JSON.parse(t.dataset.settings), i = e.m || e.animation_delay || 0, n = e[this.animationSettingKeys.find((t => e[t]))]; if ("none" === n) return void t.classList.remove("elementor-invisible"); t.classList.remove(n), this.currentAnimation && t.classList.remove(this.currentAnimation), this.currentAnimation = n; let o = setTimeout((() => { t.classList.remove("elementor-invisible"), t.classList.add("animated", n), this.l(t, e) }), i); window.addEventListener("rocket-startLoading", (function () { clearTimeout(o) })) } i(t = "mobile") { const e = [""]; switch (t) { case "mobile": e.unshift("_mobile"); case "tablet": e.unshift("_tablet"); case "desktop": e.unshift("_desktop") }const i = []; return ["animation", "_animation"].forEach((t => { e.forEach((e => { i.push(t + e) })) })), i } l(t, e) { this.i().forEach((t => delete e[t])), t.dataset.settings = JSON.stringify(e) } static run() { const t = new RocketElementorPreload; requestAnimationFrame(t.t.bind(t)) } } document.addEventListener("DOMContentLoaded", RocketElementorPreload.run) })();</script>
+		});
+	});
+});</script>
+<script>window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }]; window.addEventListener('LazyLoad::Initialized', function (e) {
+	var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
+		var observer = new MutationObserver(function (mutations) {
+			var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
+				for (var i = 0; i < mutation.addedNodes.length; i++) {
+					if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
+					if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
+					images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
+					if (is_iframe) { iframe_count += 1 }
+				}
+			}); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+		}); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+	}
+}, !1)</script>
+<script data-no-minify="1" async
+src="https://robertsmith.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+<script>(() => { class RocketElementorPreload { constructor() { this.deviceMode = document.createElement("span"), this.deviceMode.id = "elementor-device-mode-wpr", this.deviceMode.setAttribute("class", "elementor-screen-only"), document.body.appendChild(this.deviceMode) } t() { let t = getComputedStyle(this.deviceMode, ":after").content.replace(/"/g, ""); this.animationSettingKeys = this.i(t), document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t => { const e = t.getBoundingClientRect(); if (e.bottom >= 0 && e.top <= window.innerHeight) try { this.o(t) } catch (t) { } })) } o(t) { const e = JSON.parse(t.dataset.settings), i = e.m || e.animation_delay || 0, n = e[this.animationSettingKeys.find((t => e[t]))]; if ("none" === n) return void t.classList.remove("elementor-invisible"); t.classList.remove(n), this.currentAnimation && t.classList.remove(this.currentAnimation), this.currentAnimation = n; let o = setTimeout((() => { t.classList.remove("elementor-invisible"), t.classList.add("animated", n), this.l(t, e) }), i); window.addEventListener("rocket-startLoading", (function () { clearTimeout(o) })) } i(t = "mobile") { const e = [""]; switch (t) { case "mobile": e.unshift("_mobile"); case "tablet": e.unshift("_tablet"); case "desktop": e.unshift("_desktop") }const i = []; return ["animation", "_animation"].forEach((t => { e.forEach((e => { i.push(t + e) })) })), i } l(t, e) { this.i().forEach((t => delete e[t])), t.dataset.settings = JSON.stringify(e) } static run() { const t = new RocketElementorPreload; requestAnimationFrame(t.t.bind(t)) } } document.addEventListener("DOMContentLoaded", RocketElementorPreload.run) })();
+</script>
 </body>
 
 </html>
-
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
