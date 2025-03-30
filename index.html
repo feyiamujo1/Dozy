@@ -12039,12 +12039,6 @@
       </div>
     </div>
   </div>
-  <script type="rocketlazyloadscript">
-      const lazyloadRunObserver = () => { const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` ); const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => { entries.forEach( ( entry ) => { if ( entry.isIntersecting
-      ) { let lazyloadBackground = entry.target; if( lazyloadBackground ) { lazyloadBackground.classList.add( 'e-lazyloaded' ); } lazyloadBackgroundObserver.unobserve( entry.target ); } }); }, { rootMargin: '200px 0px 200px 0px' } ); lazyloadBackgrounds.forEach(
-      ( lazyloadBackground ) => { lazyloadBackgroundObserver.observe( lazyloadBackground ); } ); }; const events = [ 'DOMContentLoaded', 'elementor/lazyload/observe', ]; events.forEach( ( event ) => { document.addEventListener( event, lazyloadRunObserver
-      ); } );
-    </script>
   <script data-minify="1"
     src="https://robertsmith.com/wp-content/cache/min/1/wp-content/plugins/popup-anything-on-click/assets/js/popupaoc-public.js?ver=1741872801"
     id="popupaoc-public-js-js" data-rocket-defer defer></script>
