@@ -10077,14 +10077,14 @@
 
     .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload),
     .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload) * {
-      background-image: none !important;
+      /* background-image: none !important; */
     }
 
     @media screen and (max-height: 1024px) {
 
       .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(.e-no-lazyload),
       .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(.e-no-lazyload) * {
-        background-image: none !important;
+        /* background-image: none !important; */
       }
     }
 
@@ -10092,7 +10092,7 @@
 
       .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(.e-no-lazyload),
       .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(.e-no-lazyload) * {
-        background-image: none !important;
+        /* background-image: none !important; */
       }
     }
 
@@ -12895,6 +12895,37 @@
       );
     })();
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabButtons = document.querySelectorAll(".e-n-tab-title");
+      const tabContents = document.querySelectorAll(".e-n-tabs-content > div");
+  
+      // Function to show a tab and hide others
+      function showTab(index) {
+        tabButtons.forEach((btn, i) => {
+          btn.setAttribute("aria-selected", i + 1 === index ? "true" : "false");
+        });
+  
+        tabContents.forEach((content, i) => {
+          content.style.display = i + 1 === index ? "block" : "none";
+        });
+      }
+  
+      // Set the default tab (Early Life) on load
+      showTab(1);
+  
+      // Add event listeners to all tab buttons
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const tabIndex = parseInt(button.getAttribute("data-tab-index"));
+          showTab(tabIndex);
+        });
+      });
+    });
+  </script>
+  
+  
+  
 </body>
 
 </html>
